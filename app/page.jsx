@@ -1,3 +1,5 @@
+"use client";
+
 import LeftPanel from '../components/LeftPanel'
 import MiddleColumn from '../components/MiddleColumn'
 import RightPanel from '../components/RightPanel'
