@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react'
 import DayForm from './DayForm'
 import DayCard from './DayCard'
