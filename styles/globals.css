@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* compact, minimal global tweaks */
+:root {
+  --radius: 10px;
+}
+
+/* reduce default spacing to make UI compact */
+* { box-sizing: border-box; }
+
+/* small form inputs */
+input, textarea, button {
+  font-size: 0.9rem;
+}
+
+/* compact cards */
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Confetti styles */
+.confetti {
+  position: absolute;
+  top: -10px;
+  width: 8px;
+  height: 14px;
+  opacity: 0.95;
+  border-radius: 2px;
+  transform: translateY(0) rotate(0deg);
+  animation: confetti-fall 2s linear forwards;
+  z-index: 50;
+}
+@keyframes confetti-fall {
+  to {
+    transform: translateY(260px) rotate(720deg);
+    opacity: 0;
+  }
+}
